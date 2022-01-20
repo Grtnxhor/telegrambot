@@ -62,7 +62,7 @@ function offset() {
 
     echo "done";
 
-    session_destroy();
+    unset($_SESSION['idd']);
         
     } else {
 
