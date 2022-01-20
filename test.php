@@ -41,7 +41,10 @@ function getnewuser() {
     
     $send = file_get_contents("https://api.telegram.org/bot$token/sendmessage?chat_id=$new_user_id&text=hello $username Welcome here");
     
-    
+    echo "Message sent <br/>";
+} else {
+
+    echo "no new user found <br/>";
 }
 }
 
