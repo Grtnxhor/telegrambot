@@ -70,11 +70,12 @@ if(($output->result == true) && isset($output->result[0]->message->new_chat_memb
  }
 }
 sendmessage();
-
-?>
+echo '
 
 <script>
 setInterval(function() {
     parent.location.reload();
 }, 1000);
-</script>
+</script>';
+
+?>
