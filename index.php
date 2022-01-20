@@ -11,8 +11,14 @@ function getnewuser() {
     //welcome person to the group
     $new_user_id = $output->result[0]->message->chat->id;
     $username = $output->result[0]->message->new_chat_member->username;
+    $group = $output->result[0]->message->chat->title;
+    $msgnw = "https://t.me/$username";
+
+    echo $msgnw;
+
+    $txt = urlencode("Hello sir, $username just joined the $group group today.\n");
     
-    $send = file_get_contents("https://api.telegram.org/bot$token/sendmessage?chat_id=$new_user_id&text=hello $username Thank you for joining us.");
+    $send = file_get_contents("https://api.telegram.org/bot$token/sendmessage?chat_id=$new_user_id&text=$txt Click here to message this user: $msgnw");
     
 } 
 
