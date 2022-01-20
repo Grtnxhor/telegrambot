@@ -1,5 +1,3 @@
-echo '
-
 <script>
 setInterval(function() {
     '.telebot().'
