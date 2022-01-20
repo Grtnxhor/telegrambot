@@ -37,3 +37,16 @@ setInterval(function() {
 </script>
 
 ';
+
+
+parent.location.reload();
+
+//timer to check for update every minutes
+echo '
+<script>
+setInterval(function() {
+
+    '.getnewuser().'
+    console.log("hello");
+}, 1000);
+</script>';
