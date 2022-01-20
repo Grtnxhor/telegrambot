@@ -61,6 +61,8 @@ function offset() {
     $output = json_decode($input);
 
     echo "done";
+
+    session_destroy();
         
     } else {
 
