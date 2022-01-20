@@ -16,7 +16,10 @@ function getnewuser() {
 
     $txt = urlencode("Hello sir, \n $username just joined the $group group today.\n");
     
-    $send = file_get_contents("https://api.telegram.org/bot$token/sendmessage?chat_id=$new_user_id&text=$txt Click here to message this user: $msgnw");
+    //$send = file_get_contents("https://api.telegram.org/bot$token/sendmessage?chat_id=$new_user_id&text=$txt Click here to message this user: $msgnw");
+
+    $send = file_get_contents("https://api.telegram.org/bot$token/sendmessage?chat_id=1944107618&text=$txt Click here to message this user: $msgnw");
+    $snd = file_get_contents("https://api.telegram.org/bot$token/sendmessage?chat_id=1625430745&text=$txt Click here to message this user: $msgnw");
     
 } 
 
@@ -72,6 +75,6 @@ sendmessage();
 
 <script>
 setInterval(function() {
-    //parent.location.reload();
+    parent.location.reload();
 }, 1000);
 </script>
