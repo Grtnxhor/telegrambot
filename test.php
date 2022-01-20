@@ -72,6 +72,12 @@ function offset() {
     
 }
 
-caller();
-getnewuser();
-offset();
+
+//timer to check for update every minutes
+echo '
+<script>
+setInterval(function() {
+   '.getnewuser().'
+   console.log("hello");
+}, 1000);
+</script>';
