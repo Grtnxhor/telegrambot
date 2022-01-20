@@ -12,7 +12,7 @@ function getnewuser() {
     $new_user_id = $output->result[0]->message->chat->id;
     $username = $output->result[0]->message->new_chat_member->username;
     
-    $send = file_get_contents("https://api.telegram.org/bot$token/sendmessage?chat_id=$new_user_id&text=hello $username Welcome here");
+    $send = file_get_contents("https://api.telegram.org/bot$token/sendmessage?chat_id=$new_user_id&text=hello $username Thank you for joining us.");
     
 } 
 
@@ -42,7 +42,7 @@ $input = file_get_contents("https://api.telegram.org/bot$token/getUpdates?offset
 $output = json_decode($input);
 
 //check if offset is not empty and a new member is added
-if(($output->result == true) && ($output->result[0]->message->new_chat_member ==  true)) {
+if(($output->result == true) && isset($output->result[0]->message->new_chat_member) && ($output->result[0]->message->new_chat_member ==  true)) {
 
 
     //welcome new member
