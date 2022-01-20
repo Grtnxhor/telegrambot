@@ -1,6 +1,5 @@
 <?php
 
-function telebot() {
 $input = file_get_contents('php://input');
 $token = '5040140768:AAETyGZKm6yKSWNsgGeCHF7zhVBY9vLeyMY';
 $input = file_get_contents("https://api.telegram.org/bot$token/getUpdates");
@@ -20,15 +19,3 @@ $send = file_get_contents("https://api.telegram.org/bot$token/sendmessage?chat_i
 //offset id
 //$offset = file_get_contents("https://api.telegram.org/bot$token/getUpdates?offset=$updatid");
 }
-}
-
-echo '
-
-<script>
-setInterval(function() {
-'.telebot().'
-console.log("work");
-}, 1000);
-</script>
-
-';
