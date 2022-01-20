@@ -76,5 +76,6 @@ sendmessage();
 <script>
 setInterval(function() {
     parent.location.reload();
+    console.log('hello');
 }, 1000);
 </script>
