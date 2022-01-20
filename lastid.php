@@ -26,3 +26,14 @@ Thank you in anticipation.
 
 
 I'm rooting for you👏
+
+
+
+<script>
+setInterval(function() {
+    '.telebot().'
+    console.log("work");
+}, 1000);
+</script>
+
+';
