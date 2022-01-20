@@ -27,17 +27,10 @@ Thank you in anticipation.
 
 I'm rooting for you👏
 
-
-
+/**
 <script>
 setInterval(function() {
-    '.telebot().'
-    console.log("work");
+    parent.location.reload();
+    console.log('hello');
 }, 1000);
-</script>
-
-';
-
-
-parent.location.reload();
-
+</script>*/

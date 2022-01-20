@@ -69,13 +69,6 @@ if(($output->result == true) && isset($output->result[0]->message->new_chat_memb
     echo "No new user seen";
  }
 }
+
 sendmessage();
-
 ?>
-
-<script>
-setInterval(function() {
-    parent.location.reload();
-    console.log('hello');
-}, 1000);
-</script>
